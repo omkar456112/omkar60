@@ -1,0 +1,11 @@
+#HONEYPOT
+wget https://downloads.source.forge.net/project/pentbox18realised/pentbox-1.8.tar.gz
+tar xvfz pentbox-1.8
+cd pentbox-1.8
+./pentbox.rb
+
+#TRIVY
+https://github.com/aquasecurity/trivy/releases/latest/
+sudo apt install trivy
+sudo trivy image python:3.4-alpine
+sudo trivy image --severity HIGH python:3.4-alpines
